@@ -1,0 +1,26 @@
+#materialDidactico {
+
+    .seccion1,
+    .seccion2,
+    .seccion3 {
+        padding-top: 0%;
+        padding-bottom: 3%;
+    }
+
+    .descripcion {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    img {
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.905);
+    }
+
+    h3{
+        font-size: 2em;
+    }
+}

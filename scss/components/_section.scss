@@ -1,0 +1,76 @@
+
+section {
+
+    padding: 3em;
+    text-align: center;
+
+    h2 {
+        padding-bottom: 1rem;
+    }
+}
+
+.descripcion {
+    background-color: $color-0;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    
+    h2{
+        font-weight: 400;
+    }
+}
+
+
+@each $section, $color in $section-colors {
+  .#{$section} {
+    background-color: $color;
+    color: white;
+
+    @media(min-width: 768px) {
+      img, iframe {
+        border-radius: $bordes;
+      }
+    }
+  }
+}
+
+.transicion0{
+    background: $color-0;
+    background: linear-gradient(180deg, $color-0 39%, $color-1);
+
+    width: 100%;
+    height: 60px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.transicion1 {
+    background: $color-1;
+    background: linear-gradient(180deg, $color-1 39%, $color-2 70%);
+
+    width: 100%;
+    height: 60px;
+
+    text-align: center;
+    justify-content: center;
+
+    p {
+        padding-bottom: 5%;
+    }
+}
+
+.transicion2 {
+    background: $color-2;
+    background: linear-gradient(180deg, $color-2 39%, $color-3 70%);
+
+    width: 100%;
+    height: 60px;
+
+    text-align: center;
+    justify-content: center;
+
+    p {
+        padding-bottom: 5%;
+    }
+}

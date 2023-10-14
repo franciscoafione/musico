@@ -1,0 +1,15 @@
+
+@each $portada, $imagen in $portadas {
+  .portada-#{$portada} {
+    background-image: url("#{$imagen}");
+    background-size: cover;
+    width: 100vw;
+    height: 15vh;
+    text-align: center;
+    color: azure;
+
+    @if $portada == "piano" {
+      background-size: contain;
+    }
+  }
+}

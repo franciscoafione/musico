@@ -1,0 +1,253 @@
+/*
+$color-0: #000a12;
+$color-1: #002f5c;
+$color-2: #065778;
+$color-3: #005961;
+$color-4: #2ba685;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* ul {
+  list-style-type: none;
+}
+* iframe {
+  height: 315px;
+  width: 100%;
+}
+
+header {
+  background-color: #061C78;
+}
+
+footer {
+  background-color: #001d29;
+}
+
+section {
+  padding: 3em;
+  text-align: center;
+}
+section h2 {
+  padding-bottom: 1rem;
+}
+
+.descripcion {
+  background-color: #000a12;
+  color: white;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.descripcion h2 {
+  font-weight: 400;
+}
+
+.seccion1 {
+  background-color: #00284d;
+  color: white;
+}
+@media (min-width: 768px) {
+  .seccion1 img, .seccion1 iframe {
+    border-radius: 3%;
+  }
+}
+
+.seccion2 {
+  background-color: #05455e;
+  color: white;
+}
+@media (min-width: 768px) {
+  .seccion2 img, .seccion2 iframe {
+    border-radius: 3%;
+  }
+}
+
+.seccion3 {
+  background-color: #005961;
+  color: white;
+}
+@media (min-width: 768px) {
+  .seccion3 img, .seccion3 iframe {
+    border-radius: 3%;
+  }
+}
+
+.transicion0 {
+  background: #000a12;
+  background: linear-gradient(180deg, #000a12 39%, #00284d);
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+}
+
+.transicion1 {
+  background: #00284d;
+  background: linear-gradient(180deg, #00284d 39%, #05455e 70%);
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+}
+.transicion1 p {
+  padding-bottom: 5%;
+}
+
+.transicion2 {
+  background: #05455e;
+  background: linear-gradient(180deg, #05455e 39%, #005961 70%);
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+}
+.transicion2 p {
+  padding-bottom: 5%;
+}
+
+.carousel {
+  padding-bottom: 0%;
+  padding-top: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.carousel-item {
+  background-size: cover;
+  background-position: center;
+}
+
+.portada-lenguaje {
+  background-image: url("../img/partituras.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  color: azure;
+}
+
+.portada-guitarra {
+  background-image: url("../img/guitarra-cortada.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  color: azure;
+}
+
+.portada-piano {
+  background-image: url("../img/piano1.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  color: azure;
+  background-size: contain;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.box-hover {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.box-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+.box-hover .tittle-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: width 0.5s ease;
+  color: aliceblue;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2.5em;
+  visibility: hidden;
+}
+.box-hover:hover img {
+  filter: brightness(40%);
+}
+.box-hover:hover .tittle-hover {
+  visibility: visible;
+}
+
+#fotoPortada {
+  width: 100%;
+  height: fit-content;
+}
+
+#flyersClases img {
+  object-fit: cover;
+}
+
+#flyers img,
+#flyers iframe {
+  object-fit: cover;
+}
+#flyers iframe {
+  height: 100%;
+}
+
+#composiciones .seccion1, #composiciones .seccion2, #composiciones .seccion3 {
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+#composiciones img {
+  margin-bottom: 1em;
+}
+
+#materialAudiovisual ul {
+  padding-left: 0%;
+  padding-top: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  #materialAudiovisual iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  #materialAudiovisual iframe {
+    width: 560px;
+    height: 335px;
+  }
+}
+#materialAudiovisual h3 {
+  font-size: 1.5em;
+}
+
+#materialDidactico .seccion1,
+#materialDidactico .seccion2,
+#materialDidactico .seccion3 {
+  padding-top: 0%;
+  padding-bottom: 3%;
+}
+#materialDidactico .descripcion {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+#materialDidactico img {
+  margin-bottom: 1em;
+}
+#materialDidactico h2 {
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.905);
+}
+#materialDidactico h3 {
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=styes.css.map */

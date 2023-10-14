@@ -1,0 +1,23 @@
+#fotoPortada {
+    width: 100%;
+    height: fit-content;
+}
+
+#flyersClases {
+
+    img {
+        object-fit: cover;
+    }
+}
+
+#flyers {
+
+    img,
+    iframe {
+        object-fit: cover;
+    }
+
+    iframe {
+        height: 100%;
+    }
+}
