@@ -19,7 +19,7 @@ $color-4: #2ba685;
 }
 
 header {
-  background-color: #061C78;
+  background-color: #07144a;
 }
 
 footer {
@@ -55,7 +55,7 @@ section h2 {
 }
 
 .seccion2 {
-  background-color: #05455e;
+  background-color: #073f55;
   color: white;
 }
 @media (min-width: 768px) {
@@ -65,7 +65,7 @@ section h2 {
 }
 
 .seccion3 {
-  background-color: #005961;
+  background-color: #00454b;
   color: white;
 }
 @media (min-width: 768px) {
@@ -85,7 +85,7 @@ section h2 {
 
 .transicion1 {
   background: #00284d;
-  background: linear-gradient(180deg, #00284d 39%, #05455e 70%);
+  background: linear-gradient(180deg, #00284d 39%, #073f55 70%);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -96,14 +96,26 @@ section h2 {
 }
 
 .transicion2 {
-  background: #05455e;
-  background: linear-gradient(180deg, #05455e 39%, #005961 70%);
+  background: #073f55;
+  background: linear-gradient(180deg, #073f55 39%, #00454b 70%);
   width: 100%;
   height: 60px;
   text-align: center;
   justify-content: center;
 }
 .transicion2 p {
+  padding-bottom: 5%;
+}
+
+.transicion3 {
+  background: #00284d;
+  background: linear-gradient(180deg, #00284d 39%, #00454b 70%);
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+}
+.transicion3 p {
   padding-bottom: 5%;
 }
 
@@ -151,6 +163,38 @@ h2 {
   font-weight: 700;
 }
 
+.box-hover {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.box-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+.box-hover .tittle-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: width 0.5s ease;
+  color: aliceblue;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2.5em;
+  visibility: hidden;
+}
+.box-hover:hover img {
+  filter: brightness(40%);
+}
+.box-hover:hover .tittle-hover {
+  visibility: visible;
+}
+
 #fotoPortada {
   width: 100%;
   height: fit-content;
@@ -160,7 +204,8 @@ h2 {
   object-fit: cover;
 }
 
-#flyers img, #flyers iframe {
+#flyers img,
+#flyers iframe {
   object-fit: cover;
 }
 #flyers iframe {
@@ -181,15 +226,25 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-#materialAudiovisual iframe {
-  height: 315px;
-  width: 560px;
+@media (max-width: 768px) {
+  #materialAudiovisual iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  #materialAudiovisual iframe {
+    width: 560px;
+    height: 335px;
+  }
 }
 #materialAudiovisual h3 {
   font-size: 1.5em;
 }
 
-#materialDidactico .seccion1, #materialDidactico .seccion2, #materialDidactico .seccion3 {
+#materialDidactico .seccion1,
+#materialDidactico .seccion2,
+#materialDidactico .seccion3 {
   padding-top: 0%;
   padding-bottom: 3%;
 }
@@ -200,8 +255,17 @@ h2 {
 #materialDidactico img {
   margin-bottom: 1em;
 }
-#materialDidactico #lenguajeMusical img {
-  padding: 2em;
+#materialDidactico h2 {
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.905);
+}
+#materialDidactico h3 {
+  font-size: 2em;
+}
+
+#contacto-metodos a {
+  color: white;
+  outline: none;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
